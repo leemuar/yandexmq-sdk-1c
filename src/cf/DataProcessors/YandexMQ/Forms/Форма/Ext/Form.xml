@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Popup name="ГруппаКнопокОчереди" id="38">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Очереди</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа кнопок очереди</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ГруппаКнопокОчередиРасширеннаяПодсказка" id="39"/>
+				<ChildItems>
+					<Button name="ФормаListQueues" id="16">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ListQueues</CommandName>
+						<ExtendedTooltip name="ФормаListQueuesРасширеннаяПодсказка" id="17"/>
+					</Button>
+					<Button name="ФормаCreateQueue" id="30">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.CreateQueue</CommandName>
+						<ExtendedTooltip name="ФормаCreateQueueРасширеннаяПодсказка" id="31"/>
+					</Button>
+					<Button name="ФормаPurgeQueue" id="34">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.PurgeQueue</CommandName>
+						<ExtendedTooltip name="ФормаPurgeQueueРасширеннаяПодсказка" id="35"/>
+					</Button>
+					<Button name="ФормаDeleteQueue" id="32">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.DeleteQueue</CommandName>
+						<ExtendedTooltip name="ФормаDeleteQueueРасширеннаяПодсказка" id="33"/>
+					</Button>
+					<Button name="ФормаGetQueueUrl" id="36">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.GetQueueUrl</CommandName>
+						<ExtendedTooltip name="ФормаGetQueueUrlРасширеннаяПодсказка" id="37"/>
+					</Button>
+					<Button name="ФормаGetQueueAttributes" id="42">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.GetQueueAttributes</CommandName>
+						<ExtendedTooltip name="ФормаGetQueueAttributesРасширеннаяПодсказка" id="43"/>
+					</Button>
+					<Button name="ФормаSetQueueAttributes" id="44">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.SetQueueAttributes</CommandName>
+						<ExtendedTooltip name="ФормаSetQueueAttributesРасширеннаяПодсказка" id="45"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+			<Popup name="ГруппаКнопокСообщения" id="40">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сообщения</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа кнопок сообщения</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ГруппаКнопокСообщенияРасширеннаяПодсказка" id="41"/>
+				<ChildItems>
+					<Button name="ФормаSendMessage" id="21">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.SendMessage</CommandName>
+						<ExtendedTooltip name="ФормаSendMessageРасширеннаяПодсказка" id="22"/>
+					</Button>
+					<Button name="ФормаRecieveMessage" id="23">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.RecieveMessage</CommandName>
+						<ExtendedTooltip name="ФормаRecieveMessageРасширеннаяПодсказка" id="24"/>
+					</Button>
+					<Button name="ФормаDeleteMessage" id="25">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.DeleteMessage</CommandName>
+						<ExtendedTooltip name="ФормаDeleteMessageРасширеннаяПодсказка" id="26"/>
+					</Button>
+					<Button name="ФормаChangeMessageVisibility" id="46">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ChangeMessageVisibility</CommandName>
+						<ExtendedTooltip name="ФормаChangeMessageVisibilityРасширеннаяПодсказка" id="47"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="_Endpoint" id="1">
+			<DataPath>Объект._Endpoint</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="_EndpointКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="_EndpointРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="_Region" id="13">
+			<DataPath>Объект._Region</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="_RegionКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="_RegionРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="_Version" id="4">
+			<DataPath>Объект._Version</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="_VersionКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="_VersionРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="_AccessKey" id="7">
+			<DataPath>Объект._AccessKey</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="_AccessKeyКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="_AccessKeyРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="_SecretKey" id="10">
+			<DataPath>Объект._SecretKey</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="_SecretKeyКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="_SecretKeyРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="_SecurityToken" id="27">
+			<DataPath>Объект._SecurityToken</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="_SecurityTokenКонтекстноеМеню" id="28"/>
+			<ExtendedTooltip name="_SecurityTokenРасширеннаяПодсказка" id="29"/>
+		</InputField>
+		<TextDocumentField name="_ТекстОтвета" id="18">
+			<DataPath>_ТекстОтвета</DataPath>
+			<ContextMenu name="_ТекстОтветаКонтекстноеМеню" id="19"/>
+			<ExtendedTooltip name="_ТекстОтветаРасширеннаяПодсказка" id="20"/>
+		</TextDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.YandexMQ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект._AccessKey</Field>
+				<Field>Объект._Endpoint</Field>
+				<Field>Объект._Region</Field>
+				<Field>Объект._SecretKey</Field>
+				<Field>Объект._Version</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="_ТекстОтвета" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст ответа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ListQueues" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>List queues</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>List queues</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ListQueues</Action>
+		</Command>
+		<Command name="SendMessage" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Send message</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Send message</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>SendMessage</Action>
+		</Command>
+		<Command name="RecieveMessage" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Recieve message</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Recieve message</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>RecieveMessage</Action>
+		</Command>
+		<Command name="DeleteMessage" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Delete message</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Delete message</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>DeleteMessage</Action>
+		</Command>
+		<Command name="CreateQueue" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Create queue</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Create queue</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>CreateQueue</Action>
+		</Command>
+		<Command name="DeleteQueue" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Delete queue</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Delete queue</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>DeleteQueue</Action>
+		</Command>
+		<Command name="PurgeQueue" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Purge queue</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Purge queue</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>PurgeQueue</Action>
+		</Command>
+		<Command name="GetQueueUrl" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Get queue url</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Get queue url</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>GetQueueUrl</Action>
+		</Command>
+		<Command name="GetQueueAttributes" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Get queue attributes</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Get queue attributes</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>GetQueueAttributes</Action>
+		</Command>
+		<Command name="SetQueueAttributes" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Set queue attributes</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Set queue attributes</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>SetQueueAttributes</Action>
+		</Command>
+		<Command name="ChangeMessageVisibility" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Change message visibility</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Change message visibility</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ChangeMessageVisibility</Action>
+		</Command>
+	</Commands>
+</Form>
