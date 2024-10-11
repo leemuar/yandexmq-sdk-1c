@@ -32,8 +32,13 @@
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
-			<Name>Конфигурация</Name>
-			<Synonym/>
+			<Name>YandexMQ</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Yandex MQ</v8:content>
+				</v8:item>
+			</Synonym>
 			<Comment/>
 			<NamePrefix/>
 			<ConfigurationExtensionCompatibilityMode>Version8_3_24</ConfigurationExtensionCompatibilityMode>
@@ -43,8 +48,8 @@
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
-			<Vendor/>
-			<Version/>
+			<Vendor>leemuar</Vendor>
+			<Version>0.1</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -71,7 +76,7 @@
 			<UsedMobileApplicationFunctionalities>
 				<app:functionality>
 					<app:functionality>Biometrics</app:functionality>
-					<app:use>true</app:use>
+					<app:use>false</app:use>
 				</app:functionality>
 				<app:functionality>
 					<app:functionality>Location</app:functionality>
@@ -171,7 +176,7 @@
 				</app:functionality>
 				<app:functionality>
 					<app:functionality>OSBackup</app:functionality>
-					<app:use>true</app:use>
+					<app:use>false</app:use>
 				</app:functionality>
 				<app:functionality>
 					<app:functionality>ApplicationUsageStatistics</app:functionality>
@@ -228,8 +233,18 @@
 			<BriefInformation/>
 			<DetailedInformation/>
 			<Copyright/>
-			<VendorInformationAddress/>
-			<ConfigurationInformationAddress/>
+			<VendorInformationAddress>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>https://github.com/leemuar</v8:content>
+				</v8:item>
+			</VendorInformationAddress>
+			<ConfigurationInformationAddress>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>https://github.com/leemuar/yandexmq-sdk-1c/</v8:content>
+				</v8:item>
+			</ConfigurationInformationAddress>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<ObjectAutonumerationMode>NotAutoFree</ObjectAutonumerationMode>
 			<ModalityUseMode>DontUse</ModalityUseMode>
@@ -241,9 +256,7 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
-			<CommonModule>YandexMQ</CommonModule>
-			<CommonModule>КоннекторHTTP</CommonModule>
-			<DataProcessor>YandexMQ</DataProcessor>
+			<DataProcessor>ЯндексMQ</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
